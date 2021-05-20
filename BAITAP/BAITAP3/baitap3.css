@@ -1,0 +1,52 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Goblin One", cursive;
+}
+.menu {
+  width: 100%;
+}
+.menu ul {
+  width: 100%;
+  padding: 0 0 5px 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul li {
+}
+.menu ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+}
+.menu ul li:nth-child(odd) a {
+  background-color: red;
+}
+.menu ul li:nth-child(even) a {
+  background-color: green;
+}
+
+.sub-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-menu span {
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.sub-menu span:nth-child(odd) {
+  background-color: red;
+}
+.sub-menu span:nth-child(even) {
+  background-color: green;
+}

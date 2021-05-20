@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAI TAP 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./baitap5.css" />
+  </head>
+  <body>
+    <a class="login-system" href="#">Đăng Nhập Hệ Thống</a>
+    <a class="active-login d-none"></a>
+
+    <div class="wrap-form container-fluid d-none">
+      <form id="form-login" onsubmit="return false" role="form" method="GET">
+        <div class="container-form">
+          <span class="close">x</span>
+          <div class="form-group">
+            <h2 class="text-center mt-4 mb-4">Member Login</h2>
+            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-user-alt"></i>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Username"
+              />
+            </div>
+            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-lock"></i></div>
+              </div>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+            <small class="error" class="form-text text-muted"></small>
+          </div>
+          <button
+            type="submit"
+            id="btn-login"
+            class="btn btn-primary btn-block mt-3 mb-3"
+          >
+            Login
+          </button>
+        </div>
+        <button type="button" class="btn btn-secondary btn-block mt-4 forgot">
+          Forgot Password?
+        </button>
+      </form>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./baitap5.js"></script>
+</html>
